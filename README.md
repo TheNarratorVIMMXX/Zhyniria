@@ -19,7 +19,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 ## 🎮 Características del Juego
 
 ### 🌟 **Narrativa Inmersiva**
-- Rica narrativa con múltiples giros argumental
+- Narrativa que te atrapa con múltiples giros de situaciones
 - 4 capítulos completos, cada uno con desafíos únicos
 - Múltiples perspectivas de personajes para elegir
 
@@ -87,7 +87,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 | **Teclas Numéricas (0-9)** | Ingresar códigos numéricos |
 | **Letras (A-Z)** | Escribir respuestas a los acertijos |
 | **Enter** | Confirmar selección / Continuar |
-| **Retroceso** | Borrar último carácter |
+| **Backspace** | Borrar último carácter |
 | **ESC** | Salir del juego |
 
 ### Consejos de Juego
@@ -164,29 +164,13 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 **R:** No, las decisiones son permanentes. ¡Eso es parte del desafío! Pero puedes reiniciar después de un game over.
 
 ### P: ¿Cuánto tiempo toma completarlo?
-**R:** Aproximadamente 30-60 minutos en la primera partida.
+**R:** Aproximadamente 20-40 minutos en la primera partida.
 
 ### P: ¿Puedo guardar mi progreso?
 **R:** Actualmente no hay sistema de guardado. Debes completar el juego en una sola sesión.
 
 ### P: ¿Hay más de un final?
 **R:** El juego tiene múltiples escenarios de muerte, pero un final principal si completas todos los capítulos.
-
-### P: El texto va muy rápido/lento. ¿Puedo cambiarlo?
-**R:** El juego tiene tiempos fijos, pero puedes pausar en cualquier indicador sin presionar Enter.
-
----
-
-## 🏆 Logros (No Oficiales)
-
-Intenta cumplir estos desafíos:
-
-- 🎖️ **Partida Perfecta:** Completa el juego sin morir
-- 🧠 **Genio:** Resuelve todos los puzzles al primer intento
-- 💪 **Superviviente:** Termina con 100% de salud
-- 📖 **Completista:** Explora cada objeto en el Capítulo 2
-- ⚡ **Speed Runner:** Completa en menos de 30 minutos
-- 🎭 **Coleccionista:** Juega con los 4 personajes
 
 ---
 
