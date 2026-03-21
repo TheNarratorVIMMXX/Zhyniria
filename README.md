@@ -1,215 +1,215 @@
-# 🌑 Zhyniria: The Shadows of the Abyss
+# 🌑 Zhyniria: Las Sombras del Abismo
 
-**A Dark Text Adventure Through an Ancient Tower**
+**Una Oscura Aventura de Texto a Través de una Torre Antigua**
 
-> *"Millions of years ago, an enormous tower appeared... Now, you must uncover its secrets or be consumed by the darkness within."*
-
----
-
-## 📖 Story
-
-In the world of Zhyniria, the Tower of Dreams stands as a colossal monument that defies time and logic. Built millennia ago by a forgotten civilization, this tower was designed to contain and channel arcane energy. However, over the centuries, the barrier between dreams and nightmares began to weaken.
-
-Now, dark nightmares have corrupted the tower from within, transforming it into a living, ever-changing dungeon. **You are a brave soul who dares to enter**, but beware—the tower is not just a physical place; it is a reflection of the soul and mind of those who explore it.
-
-Will you survive the shadows? Or will you become another lost soul in the abyss?
+> *"Hace millones de años, una enorme torre apareció... Ahora, debes descubrir sus secretos o ser consumido por la oscuridad que hay en su interior."*
 
 ---
 
-## 🎮 Game Features
+## 📖 Historia
 
-### 🌟 **Immersive Storytelling**
-- Rich narrative with multiple plot twists
-- 4 complete chapters, each with unique challenges
-- Multiple character perspectives to choose from
+En el mundo de Zhyniria, la Torre de los Sueños se erige como un monumento colosal que desafía el tiempo y la lógica. Construida hace milenios por una civilización olvidada, esta torre fue diseñada para contener y canalizar energía arcana. Sin embargo, con el paso de los siglos, la barrera entre los sueños y las pesadillas comenzó a debilitarse.
 
-### 🧩 **Challenging Puzzles**
-- Logic puzzles and riddles
-- Numeric code challenges
-- Word-based mysteries
-- Hidden clues throughout the game
+Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándola en una mazmorra viva y en constante cambio. **Eres un alma valiente que se atreve a entrar**, pero ten cuidado: la torre no es solo un lugar físico; es un reflejo del alma y la mente de quienes la exploran.
 
-### ⚔️ **Survival Mechanics**
-- Dynamic health system
-- Item management (bandages, tools)
-- Consequence-based decisions
-- Multiple death scenarios (be careful!)
-
-### 🎭 **Character Selection**
-- **Renn** - A determined young woman
-- **Akira** - A brave young man
-- **Asuna** - A skilled warrior
-- **Kirito** - A strategic thinker
-
-### 🎨 **Atmospheric Experience**
-- ASCII art illustrations
-- Color-coded text for emphasis
-- Sound effects (beeps for dramatic moments)
-- Timed animations and transitions
+¿Sobrevivirás a las sombras? ¿O te convertirás en otra alma perdida en el abismo?
 
 ---
 
-## 💻 System Requirements
+## 🎮 Características del Juego
 
-| Component | Minimum Requirement |
+### 🌟 **Narrativa Inmersiva**
+- Rica narrativa con múltiples giros argumental
+- 4 capítulos completos, cada uno con desafíos únicos
+- Múltiples perspectivas de personajes para elegir
+
+### 🧩 **Puzzles Desafiantes**
+- Acertijos y puzzles de lógica
+- Desafíos con códigos numéricos
+- Misterios basados en palabras
+- Pistas ocultas a lo largo del juego
+
+### ⚔️ **Mecánicas de Supervivencia**
+- Sistema de salud dinámico
+- Gestión de objetos (vendas, herramientas)
+- Decisiones con consecuencias reales
+- Múltiples escenarios de muerte (¡ten cuidado!)
+
+### 🎭 **Selección de Personaje**
+- **Renn** - Una joven determinada
+- **Akira** - Un joven valiente
+- **Asuna** - Una guerrera habilidosa
+- **Kirito** - Un pensador estratégico
+
+### 🎨 **Experiencia Atmosférica**
+- Ilustraciones en arte ASCII
+- Texto con código de colores para mayor énfasis
+- Efectos de sonido (pitidos en momentos dramáticos)
+- Animaciones y transiciones temporizadas
+
+---
+
+## 💻 Requisitos del Sistema
+
+| Componente | Requisito Mínimo |
 |-----------|-------------------|
-| **Operating System** | Windows 7 or higher |
+| **Sistema Operativo** | Windows 7 o superior |
 | **RAM** | 25 MB |
-| **Storage** | 5 MB free space |
-| **Display** | Console/Terminal (80+ columns recommended) |
-| **Input** | Keyboard |
+| **Almacenamiento** | 5 MB de espacio libre |
+| **Pantalla** | Consola/Terminal (80+ columnas recomendado) |
+| **Entrada** | Teclado |
 
 ---
 
-## 📥 Download & Installation
+## 📥 Descarga e Instalación
 
-### Step 1: Download
-1. Go to the [Releases](../../releases) section
-2. Download the latest `Zhyniria.exe` file
-3. Save it to a folder of your choice
+### Paso 1: Descargar
+1. Ve a la sección [Releases](../../releases)
+2. Descarga el archivo `Zhyniria.exe` más reciente
+3. Guárdalo en una carpeta de tu elección
 
-### Step 2: Run the Game
-1. Double-click `Zhyniria.exe`
-2. A console window will open
-3. Enjoy your adventure!
+### Paso 2: Ejecutar el Juego
+1. Haz doble clic en `Zhyniria.exe`
+2. Se abrirá una ventana de consola
+3. ¡Disfruta tu aventura!
 
-> **Note:** Windows might show a security warning. Click "More info" → "Run anyway" to start the game.
+> **Nota:** Windows podría mostrar una advertencia de seguridad. Haz clic en "Más información" → "Ejecutar de todas formas" para iniciar el juego.
 
 ---
 
-## 🎯 How to Play
+## 🎯 Cómo Jugar
 
-### Basic Controls
+### Controles Básicos
 
-| Key | Action |
+| Tecla | Acción |
 |-----|--------|
-| **Number Keys (1-4)** | Select menu options |
-| **Number Keys (0-9)** | Enter numeric codes |
-| **Letters (A-Z)** | Type answers for riddles |
-| **Enter** | Confirm selection / Continue |
-| **Backspace** | Delete last character |
-| **ESC** | Exit game |
+| **Teclas Numéricas (1-4)** | Seleccionar opciones del menú |
+| **Teclas Numéricas (0-9)** | Ingresar códigos numéricos |
+| **Letras (A-Z)** | Escribir respuestas a los acertijos |
+| **Enter** | Confirmar selección / Continuar |
+| **Retroceso** | Borrar último carácter |
+| **ESC** | Salir del juego |
 
-### Gameplay Tips
+### Consejos de Juego
 
-✅ **Read Carefully:** Clues are hidden in the text  
-✅ **Take Notes:** Write down important numbers and words  
-✅ **Explore Everything:** Check all objects in each room  
-✅ **Manage Health:** Use bandages wisely  
-✅ **Save Your Answers:** Some puzzles have multiple stages  
-✅ **Think Logically:** Most puzzles follow patterns
-
----
-
-## 📚 Chapter Guide
-
-### 🕰️ Chapter 1: The Entry Chamber
-**Objective:** Solve the clock puzzle to unlock the first door  
-**Difficulty:** ⭐⭐☆☆☆  
-**Key Items:** Clock, Book, Chest, Painting  
-**Hints:** Pay attention to the clock hands and numbers
-
-### 🔥 Chapter 2: The Ashen Room
-**Objective:** Collect 5 mirror fragments while managing health  
-**Difficulty:** ⭐⭐⭐☆☆  
-**Key Items:** Bandages, Shirt, Jacket  
-**Hints:** Cover your face to avoid ash damage
-
-### 📜 Chapter 3: The Diary Challenge
-**Objective:** Complete the missing phrases in the diary  
-**Difficulty:** ⭐⭐⭐⭐☆  
-**Key Items:** Incomplete diary  
-**Hints:** Look for patterns in the words
-
-### 🗿 Chapter 4: The Five Statues
-**Objective:** Solve challenges from five mysterious sisters  
-**Difficulty:** ⭐⭐⭐⭐⭐  
-**Key Items:** Flashlight, Rock fragments, Diary  
-**Hints:** Each statue has a unique riddle or puzzle
+✅ **Lee con Atención:** Las pistas están ocultas en el texto  
+✅ **Toma Notas:** Anota números y palabras importantes  
+✅ **Explora Todo:** Revisa todos los objetos en cada habitación  
+✅ **Administra tu Salud:** Usa las vendas con sabiduría  
+✅ **Guarda tus Respuestas:** Algunos puzzles tienen múltiples etapas  
+✅ **Piensa con Lógica:** La mayoría de los puzzles siguen patrones
 
 ---
 
-## 🎲 Game Mechanics
+## 📚 Guía de Capítulos
 
-### Health System
-- **Starting Health:** 100%
-- **Death Occurs:** 0% health or wrong critical decisions
-- **Healing Items:** Bandages (+30% health)
-- **Damage Sources:** Ash, traps, wrong decisions
+### 🕰️ Capítulo 1: La Cámara de Entrada
+**Objetivo:** Resolver el puzzle del reloj para desbloquear la primera puerta  
+**Dificultad:** ⭐⭐☆☆☆  
+**Objetos Clave:** Reloj, Libro, Cofre, Cuadro  
+**Pistas:** Presta atención a las manecillas y los números del reloj
 
-### Decision Making
-- Every choice has consequences
-- Some decisions lead to instant death
-- Pay attention to warnings and clues
-- There are multiple paths to victory
+### 🔥 Capítulo 2: La Habitación de las Cenizas
+**Objetivo:** Recolectar 5 fragmentos de espejo mientras administras tu salud  
+**Dificultad:** ⭐⭐⭐☆☆  
+**Objetos Clave:** Vendas, Camisa, Chaqueta  
+**Pistas:** Cúbrete el rostro para evitar el daño de las cenizas
 
-### Puzzle Types
-1. **Numeric Codes:** Enter the correct sequence of numbers
-2. **Word Riddles:** Type the answer to riddles
-3. **Object Exploration:** Search rooms for hidden items
-4. **Logic Puzzles:** Use clues to deduce answers
-5. **Coordinate Systems:** Navigate grids to find items
+### 📜 Capítulo 3: El Desafío del Diario
+**Objetivo:** Completar las frases faltantes en el diario  
+**Dificultad:** ⭐⭐⭐⭐☆  
+**Objetos Clave:** Diario incompleto  
+**Pistas:** Busca patrones en las palabras
 
----
-
-## ❓ Frequently Asked Questions
-
-### Q: The game won't start. What should I do?
-**A:** Make sure you have Windows 7 or higher. Try running as administrator (right-click → "Run as administrator").
-
-### Q: I can't see colors. What's wrong?
-**A:** Your console might not support color. The game is still playable, just without colors.
-
-### Q: I made a mistake. Can I go back?
-**A:** No, decisions are permanent. That's part of the challenge! But you can restart after a game over.
-
-### Q: How long does it take to complete?
-**A:** Approximately 30-60 minutes for a first playthrough.
-
-### Q: Can I save my progress?
-**A:** Currently, there is no save system. You must complete the game in one session.
-
-### Q: Is there more than one ending?
-**A:** The game has multiple death scenarios, but one main ending if you complete all chapters.
-
-### Q: The text is too fast/slow. Can I change it?
-**A:** The game has fixed timing, but you can pause at any prompt by not pressing Enter.
+### 🗿 Capítulo 4: Las Cinco Estatuas
+**Objetivo:** Resolver los desafíos de cinco misteriosas hermanas  
+**Dificultad:** ⭐⭐⭐⭐⭐  
+**Objetos Clave:** Linterna, Fragmentos de roca, Diario  
+**Pistas:** Cada estatua tiene un acertijo o puzzle único
 
 ---
 
-## 🏆 Achievements (Unofficial)
+## 🎲 Mecánicas del Juego
 
-Try to accomplish these challenges:
+### Sistema de Salud
+- **Salud Inicial:** 100%
+- **Muerte:** 0% de salud o decisiones críticas incorrectas
+- **Objetos de Curación:** Vendas (+30% de salud)
+- **Fuentes de Daño:** Cenizas, trampas, decisiones incorrectas
 
-- 🎖️ **Perfect Run:** Complete the game without dying
-- 🧠 **Genius:** Solve all puzzles on the first try
-- 💪 **Survivor:** Finish with 100% health
-- 📖 **Completionist:** Explore every object in Chapter 2
-- ⚡ **Speed Runner:** Complete in under 30 minutes
-- 🎭 **Collector:** Play with all 4 characters
+### Toma de Decisiones
+- Cada elección tiene consecuencias
+- Algunas decisiones llevan a la muerte instantánea
+- Presta atención a las advertencias y pistas
+- Existen múltiples caminos hacia la victoria
+
+### Tipos de Puzzles
+1. **Códigos Numéricos:** Ingresa la secuencia correcta de números
+2. **Acertijos de Palabras:** Escribe la respuesta a los acertijos
+3. **Exploración de Objetos:** Busca objetos ocultos en las habitaciones
+4. **Puzzles de Lógica:** Usa las pistas para deducir respuestas
+5. **Sistemas de Coordenadas:** Navega cuadrículas para encontrar objetos
 
 ---
 
-## 🐛 Known Issues
+## ❓ Preguntas Frecuentes
 
-- **Spanish Only:** Currently available only in Spanish
-- **No Save Feature:** Must complete in one session
-- **Console Required:** Needs a Windows console window
-- **Fixed Window Size:** Best viewed in full-screen console
-- **No Mouse Support:** Keyboard-only controls
+### P: El juego no inicia. ¿Qué debo hacer?
+**R:** Asegúrate de tener Windows 7 o superior. Intenta ejecutarlo como administrador (clic derecho → "Ejecutar como administrador").
+
+### P: No puedo ver los colores. ¿Qué está mal?
+**R:** Es posible que tu consola no soporte colores. El juego sigue siendo jugable, solo que sin colores.
+
+### P: Cometí un error. ¿Puedo volver atrás?
+**R:** No, las decisiones son permanentes. ¡Eso es parte del desafío! Pero puedes reiniciar después de un game over.
+
+### P: ¿Cuánto tiempo toma completarlo?
+**R:** Aproximadamente 30-60 minutos en la primera partida.
+
+### P: ¿Puedo guardar mi progreso?
+**R:** Actualmente no hay sistema de guardado. Debes completar el juego en una sola sesión.
+
+### P: ¿Hay más de un final?
+**R:** El juego tiene múltiples escenarios de muerte, pero un final principal si completas todos los capítulos.
+
+### P: El texto va muy rápido/lento. ¿Puedo cambiarlo?
+**R:** El juego tiene tiempos fijos, pero puedes pausar en cualquier indicador sin presionar Enter.
 
 ---
 
-## 📸 Screenshots
+## 🏆 Logros (No Oficiales)
+
+Intenta cumplir estos desafíos:
+
+- 🎖️ **Partida Perfecta:** Completa el juego sin morir
+- 🧠 **Genio:** Resuelve todos los puzzles al primer intento
+- 💪 **Superviviente:** Termina con 100% de salud
+- 📖 **Completista:** Explora cada objeto en el Capítulo 2
+- ⚡ **Speed Runner:** Completa en menos de 30 minutos
+- 🎭 **Coleccionista:** Juega con los 4 personajes
+
+---
+
+## 🐛 Problemas Conocidos
+
+- **Solo en Español:** Actualmente disponible únicamente en español
+- **Sin Guardado:** Debes completar en una sola sesión
+- **Requiere Consola:** Necesita una ventana de consola de Windows
+- **Tamaño de Ventana Fijo:** Se ve mejor en consola a pantalla completa
+- **Sin Soporte de Ratón:** Controles solo con teclado
+
+---
+
+## 📸 Capturas de Pantalla
 ```
 ================================================================================================
 |                                    ZHYNIRIA                                                  |
-|                                LAS SOMBRAS DEL ABISMO                                         |
+|                                LAS SOMBRAS DEL ABISMO                                        |
 ================================================================================================
 |                                                                                              |
-|                              1. -} Empezar la aventura                                        |
+|                              1. -} Empezar la aventura                                       |
 |                              2. -> Opciones                                                  |
-|                              3. Controles/Funcionamiento                                      |
+|                              3. Controles/Funcionamiento                                     |
 |                              4. X Salir                                                      |
 |                                                                                              |
 ================================================================================================
@@ -217,79 +217,79 @@ Try to accomplish these challenges:
 
 ---
 
-## 💀 Death Scenarios
+## 💀 Escenarios de Muerte
 
-Be careful! The game features multiple ways to die:
+¡Ten cuidado! El juego presenta múltiples formas de morir:
 
-1. **Ash Suffocation** - Don't protect yourself from the ashes
-2. **Wrong Puzzle Answer** - Too many incorrect attempts
-3. **Trap Activation** - Choosing the wrong objects
-4. **Crushing Death** - Activating deadly mechanisms
-5. **Anxiety Overload** - Taking too long to decide
-6. **And more...** - Discover them yourself!
-
----
-
-## 📞 Support & Contact
-
-Having issues? Need help with a puzzle?
-
-📧 **Email:** cgmagallanes23@gmail.com  
-🐛 **Report Bugs:** [Open an Issue](../../issues)  
-💬 **Discussions:** [Community Forum](../../discussions)
-
-**Please include:**
-- Your Windows version
-- Description of the problem
-- Screenshot (if possible)
-- What you were trying to do
+1. **Asfixia por Cenizas** - No te protejas de las cenizas
+2. **Respuesta Incorrecta en Puzzle** - Demasiados intentos fallidos
+3. **Activación de Trampa** - Elegir los objetos equivocados
+4. **Muerte por Aplastamiento** - Activar mecanismos letales
+5. **Sobrecarga de Ansiedad** - Tardar demasiado en decidir
+6. **Y más...** - ¡Descúbrelos tú mismo!
 
 ---
 
-## 👥 Credits
+## 📞 Soporte y Contacto
 
-### Development Team: ModeX
+¿Tienes problemas? ¿Necesitas ayuda con algún puzzle?
 
-- **Carlos Gabriel Magallanes López** - Lead Developer
-- **Kevin Zaid Barron Pando** - Developer
-- **Marco Andrés Bonilla Murillo** - Developer
-- **Sergio Badiola Muñoz** - Game Designer
-- **Jose Abraham Adame Gallardo** - Game Designer
+📧 **Correo:** cgmagallanes23@gmail.com  
+🐛 **Reportar Bugs:** [Abrir un Issue](../../issues)  
+💬 **Discusiones:** [Foro de la Comunidad](../../discussions)
 
-**Development Period:** April 29 - June 12, 2025
-
----
-
-## 📜 License
-
-This game is free to play for personal use.  
-© 2025 ModeX Development Team
-
-**Please do not:**
-- Redistribute modified versions
-- Use for commercial purposes
-- Remove credits
-
-**You are welcome to:**
-- Share the original download link
-- Stream or record gameplay
-- Create guides and walkthroughs
+**Por favor incluye:**
+- Tu versión de Windows
+- Descripción del problema
+- Captura de pantalla (si es posible)
+- Lo que estabas intentando hacer
 
 ---
 
-## 🌟 Final Words
+## 👥 Créditos
 
-*"The tower awaits, brave adventurer. Will you uncover its secrets, or will the darkness claim another soul? The choice is yours... if you dare to enter."*
+### Equipo de Desarrollo: ModeX
 
-**Good luck, and may the light guide you through the shadows!**
+- **Carlos Gabriel Magallanes López** - Desarrollador Principal
+- **Kevin Zaid Barron Pando** - Desarrollador
+- **Marco Andrés Bonilla Murillo** - Desarrollador
+- **Sergio Badiola Muñoz** - Diseñador de Juego
+- **Jose Abraham Adame Gallardo** - Diseñador de Juego
+
+**Período de Desarrollo:** 29 de Abril - 12 de Junio, 2025
 
 ---
 
-⚔️ **Download now and begin your journey into the abyss!**
+## 📜 Licencia
 
-[📥 Download Zhyniria.exe](../../releases/latest)
+Este juego es gratuito para uso personal.  
+© 2025 Equipo de Desarrollo ModeX
+
+**Por favor no:**
+- Redistribuyas versiones modificadas
+- Uses con fines comerciales
+- Elimines los créditos
+
+**Eres bienvenido a:**
+- Compartir el enlace de descarga original
+- Transmitir o grabar gameplay
+- Crear guías y tutoriales
 
 ---
 
-*Last Updated: December 16, 2025*  
-*Version: 1.0 - Complete Edition*
+## 🌟 Palabras Finales
+
+*"La torre te espera, valiente aventurero. ¿Descubrirás sus secretos, o la oscuridad reclamará otra alma? La elección es tuya... si te atreves a entrar."*
+
+**¡Buena suerte, y que la luz te guíe a través de las sombras!**
+
+---
+
+⚔️ **¡Descárgalo ahora y comienza tu viaje hacia el abismo!**
+
+[📥 Descargar Zhyniria.exe](../../releases/latest)
+
+---
+
+*Última Actualización: 16 de Diciembre, 2025*  
+*Versión: 1.0 - Edición Completa*
