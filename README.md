@@ -51,13 +51,35 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ## 💻 Requisitos del Sistema
 
+### 🖥️ Sistema Operativo Compatible
+
+| Plataforma | Versión Mínima | Versión Recomendada |
+|-----------|---------------|-------------------|
+| **Windows** | Windows 7 | Windows 10 / 11 |
+| **Linux** | Kernel 3.x | Ubuntu 20.04+ / Debian 11+ |
+| **macOS** | macOS 10.12 Sierra | macOS 12 Monterey+ |
+
+---
+
+### ⚙️ Hardware
+
 | Componente | Requisito Mínimo |
-|-----------|-------------------|
-| **Sistema Operativo** | Windows 7 o superior |
+|-----------|-----------------|
 | **RAM** | 25 MB |
 | **Almacenamiento** | 5 MB de espacio libre |
+| **Procesador** | Cualquier CPU de doble núcleo |
 | **Pantalla** | Consola/Terminal (80+ columnas recomendado) |
 | **Entrada** | Teclado |
+| **Red** | No requerida |
+| **GPU** | No requerida |
+
+---
+
+### ⚠️ Notas por Plataforma
+
+> **Windows:** La consola de Windows 10 y 11 soporta colores ANSI de forma nativa. En Windows 7 y 8 los colores pueden no visualizarse correctamente.
+
+> **Linux / macOS:** Cualquier terminal moderno es compatible — bash, zsh, fish, entre otros.
 
 ---
 
