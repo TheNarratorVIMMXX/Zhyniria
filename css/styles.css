@@ -1,0 +1,807 @@
+/*****************************************************************************************************************************************************************************/
+/*                                                                                                                                                                           */
+/*                                                                  Estilos para el Proyecto Zhyniria                                                                        */
+/*                                                                                                                                                                           */
+/*****************************************************************************************************************************************************************************/
+/*                                                                                                                                                                           */
+/* Autor: Magallanes López Carlos Gabriel                                                                                                                                    */
+/* Versión del Proyecto: 1.0                                                                                                                                                 */
+/* Correo: cgmagallanes23@gmail.com                                                                                                                                          */
+/* Ultima Modificación: 21/03/2025                                                                                                                                           */
+/*                                                                                                                                                                           */
+/*****************************************************************************************************************************************************************************/
+
+
+/* Propiedades Custom para HTML */
+:root {
+            
+    --black: #050408; --deep-black: #0a0810; --dark-black: #110d1a; --panel-black: #16111f;
+    --gold: #c9a84c; --gold-light: #e8c97a; --gold-dim: #7a6030;
+    --red: #8b1a1a; --red-bright: #c0392b;
+    --purple: #4a1f6b; --dark-purple: #2a1f3d; --purple-dim: #2d1040;
+    --text: #d4c9b8; --text-dim: #7a6f60; --text-bright: #f0e8d8;
+                
+}
+
+/* Reset del Selector Global y sus PseudoElementos*/
+*, *::before, *::after {margin: 0; padding: 0; box-sizing: border-box;}
+        
+/* Comportamiento de Scroll Suave para Anclas en el Documento HTML */
+html {scroll-behavior: smooth;}
+
+/* Estilo del Cuerpo del Documento */
+body {
+            
+    background-color: var(--black);                                                                           
+    color: var(--text);
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    overflow-x: hidden;                                                                                       /* Evita el Scroll Horizontal */
+    cursor: default;                                                                                          /* Cursor por Defecto, Evitar Efecto Texto Seleccionable */
+
+}
+
+/* Barra de Scroll */
+::-webkit-scrollbar {width: 6px;}                                                                             /* Contenedor de la Barra de Scroll */
+::-webkit-scrollbar-track {background: var(--black);}                                                         /* Fondo del Track de la Barra de Scroll */
+::-webkit-scrollbar-thumb {background: var(--gold-dim); border-radius: 3px;}                                  /* Estilo del Pulgar de la Barra de Scroll */
+
+/* Textura de Ruido Visual */
+body::before {
+
+    content: '';
+    position: fixed;             
+    inset: 0;                                                                                                 /* Cubre toda el Área de la Pantalla */
+    background-image:                                                                                         /*  Genera una Imagen a partir de un SVG para Ruido Visual */
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    opacity: 0.025;
+    pointer-events: none;                                                                                     /* Permite Interactuar con Elementos Debajo del Overlay */
+    z-index: 9999;                                                                                            /* Asegura que el Overlay Esté por Encima de Otros Elementos */
+        
+}
+
+/* Selector de HTML para Navegación */
+nav {
+            
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;                                                                                            /* Asegura que la Barra de Navegación Esté por Encima de Otros Elementos */
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(5,4,8,0.95), transparent);
+    border-bottom: 1px solid rgba(201,168,76,0.1);
+
+}
+
+/* Clase para el Logo de la Navegación */
+.nav-logo {
+
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-decoration: none;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    transition: color 0.3s;                                                                                   /* Transición Suave para el Cambio de Color al Hover */
+
+}
+
+/* PseudoClase para el Efecto Hover del Logo de Navegación */
+.nav-logo:hover {color: var(--gold-light);}                                                                      
+
+/* Clase para los Enlaces de Navegación */
+.nav-links {display: flex; gap: 30px; list-style: none;}
+
+/* Selector HTML para los Enlaces de Navegación */
+.nav-links a {
+
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    color: var(--text-dim);
+    text-decoration: none;   
+    transition: color 0.3s;                                                                                   /* Transición Suave para el Cambio de Color al Hover */
+
+}
+
+/* PseudoClase para el Efecto Hover de los Enlaces de Navegación */
+.nav-links a:hover {color: var(--gold);}
+
+ /* Clase para la Sección Principal (Hero) */
+.hero {
+
+    position: relative;                                                                                       /* Posicionamiento Relativo para Contener Elementos Absolutos como el Fondo y la Superposición */
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;                                                                                         /* Evita que el Contenido se Desborde del Hero, Importante para el Fondo Absoluto */
+        
+}
+
+/* Clase para el Fondo del Hero*/
+.hero-bg {
+            
+    position: absolute; 
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);                                                                    /* Divide el Fondo en 2 Columnas Iguales para un Efecto de Ruido Visual Más Dinámico */
+    grid-template-rows: repeat(2, 1fr);                                                                       /* Divide el Fondo en 2 Filas Iguales para un Efecto de Ruido Visual Más Dinámico */
+    gap: 0;                                                                                                   /* Elimina el Espacio entre las Celdas para que las Imágenes Cubran Toda el Área sin Gaps */
+    opacity: 0.35;
+        
+}
+
+/* Selector Descendente para las Imágenes dentro del Fondo del Hero */
+.hero-bg img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                                                                                        /* Asegura que las Imágenes Cubran Toda el Área del Hero sin Deformarse */
+    filter: grayscale(30%) sepia(20%);                                                                        /* Aplica Filtro de Escala de Grises y Sepia para Integrar Mejor las Imágenes con la Paleta de Colores */
+        
+}
+
+/* Clase para el Overlay de la Sección Principal (Hero) */
+.hero-overlay {
+            
+    position: absolute;
+    inset: 0;                                                                                                 /* Cubre toda el Área del Hero */
+    background:                                                                                               
+        radial-gradient(ellipse at 50% 40%, rgba(74,31,107,0.25) 0%, transparent 60%),                      /* Primer Capa de Gradiente Radial para un Toque de Color Púrpura Suave en el Centro del Hero */
+        radial-gradient(ellipse at 80% 80%, rgba(139,26,26,0.15) 0%, transparent 50%),                      /* Segunda Capa Gradiente Radial para Toque Color Rojo Suave en la Esquina Inferior Derecha del Hero */
+        linear-gradient(160deg, #050408 0%, #0d0818 40%, #110d1a 70%, #050408 100%);                 /* Tercer Capa Gradiente Lineal para Oscurecer los Bordes del Hero y Enfocar la Atención en el Centro */
+        
+}
+
+/* Clase para el Contenido Principal dentro del Hero */
+.hero-content {
+        
+    position: relative;
+    text-align: center;
+    padding: 20px;                                                                                            /* Espaciado Interno para Evitar que el Contenido Toque los Bordes del Hero en Pantallas Pequeñas */
+    animation: heroReveal 2s ease forwards;                                                                   /* Usar Animación para la Aparición del Contenido del Hero y Mantenerlo Visible */
+        
+}
+
+/* Crear Animación para la Aparición del Contenido del Hero */
+@keyframes heroReveal {from {opacity:0;transform:translateY(30px);} to {opacity:1;transform:translateY(0);}}
+
+/* Clase para el Texto de la Sección Principal (Hero) */
+.hero-eyebrow {
+            
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    color: var(--gold-dim);
+    margin-bottom: 20px;
+    display: block;                                                                                           /* Asegura que Eyebrow se Muestre en Nueva Línea y Permite el Margen Inferior para Separarlo del Título */
+        
+}
+
+/* Clase para el Título Principal dentro del Hero */
+.hero-title {
+        
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight: 900;
+    color: var(--gold);
+    text-shadow: 0 0 60px rgba(201,168,76,0.4), 0 0 120px rgba(201,168,76,0.15);
+    line-height: 1.1;
+    margin-bottom: 10px;
+        
+}
+
+/* Clase para el Subtítulo dentro del Hero */
+.hero-subtitle {
+        
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+    color: var(--text-dim);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+        
+}
+
+/* Clase para el Divisor Decorativo dentro del Hero */
+.hero-divider {
+        
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 0 auto 30px;
+        
+}
+
+/* Clase para la Cita Destacada dentro del Hero */
+.hero-quote {
+        
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text);
+    max-width: 550px;
+    margin: 0 auto 40px;                                                                                  
+    opacity: 0.8;
+        
+}
+
+/* Clase para el Botón de Llamada a la Acción dentro del Hero */
+.hero-cta {
+            
+    display: inline-block;                                                                                    /* Permite que el Botón se Ajuste al Contenido y Mantenga el Padding */
+    padding: 14px 40px;
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    text-decoration: none;
+    transition: all 0.4s;                                                                                     /* Transición Suave para el Cambio de Estilo al Hover */
+    position: relative;                                                                                       /* Posicionamiento Relativo */
+    overflow: hidden;                                                                                         /* Evita que se Desborde del Botón */
+
+}
+
+/* PseudoElemento para el Efecto de Fondo Deslizante en el Botón de Llamada a la Acción */
+.hero-cta::before {
+
+    content: '';
+    position: absolute;
+    inset: 0;                                                                                                 /* Cubre toda el Área del Botón */
+    background: var(--gold);
+    transform: translateX(-100%);                                                                             /* Comienza Fuera del Botón a la Izquierda */
+    transition: transform 0.4s;                                                                               /* Transición Suave para el Deslizamiento del Fondo al Hover */
+    z-index: -1;                                                                                              /* Coloca el Fondo Detrás del Texto del Botón */
+        
+}
+
+
+/* Configurar la PseudoClase Hover para el Botón de Llamada a la Acción */
+.hero-cta:hover {color: var(--black); border-color: var(--gold);}                                             /* Cambia el Color del Texto y el Borde al Hover para Mejor Contraste con el Fondo Deslizante */
+.hero-cta:hover::before {transform: translateX(0);}                                                           /* Configruando PseudoElemento activado por la Pseudoclase Hover */
+
+/* Clase para el Indicador de Scroll dentro del Hero */
+.scroll-indicator {
+            
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);                                                                              /* Centra el Indicador Horizontalmente en la Parte Inferior del Hero */
+    display: flex;                                                                                            /* Usar Flexbox para Alinear el Texto y la Flecha Verticalmente */
+    flex-direction: column;                                                                                   /* Organiza el Texto y la Flecha en una Columna */
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dim);
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    animation: scrollBounce 2s ease-in-out infinite;                                                          /* Animación de Rebote para el Indicador de Scroll */
+        
+}
+
+/* PseudoElemento para la Flecha Vertical del Indicador de Scroll */
+.scroll-indicator::after {
+        
+    content: '';                                                                                           
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--gold-dim), transparent);
+        
+}
+
+/* Animación de Rebote para el Indicador de Scroll */
+@keyframes scrollBounce {
+        
+    0%, 100% {transform: translateX(-50%) translateY(0);}
+    50%       {transform: translateX(-50%) translateY(8px);}
+        
+}
+
+/* Selector de HTML para las Secciones Generales del Documento */
+section { padding: 100px 0; }
+
+/* Clase para el Contenedor Principal dentro de las Secciones */
+.container {
+        
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+        
+}
+
+/* Clase para el Label de las Secciones */
+.section-label {
+        
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    color: var(--gold-dim);
+    display: block;                                                                                           /* Asegura que el Label se Muestre en Nueva Línea y Permite el Margen Inferior para Separarlo del Título */
+    margin-bottom: 16px;
+        
+}
+
+/* Clase para el Título de las Secciones */
+.section-title {
+        
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    color: var(--gold);
+    line-height: 1.2;
+    margin-bottom: 20px;
+        
+}
+
+/* Clase para el Divisor Decorativo de las Secciones */
+.section-rule {
+        
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, var(--gold-dim), transparent);
+    margin-bottom: 30px;
+        
+}
+
+/* Clase para la Sección de Lore */
+.lore-section {background: linear-gradient(to bottom, var(--black), var(--deep-black));position: relative;}
+
+/* PseudoElemento para el Adorno de la Sección de Lore */
+.lore-section::before {
+            
+    content: '❧';
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-size: 8rem;
+    color: var(--purple-dim);
+    opacity: 0.3;
+    pointer-events: none;                                                                                     /* Permite Interactuar con Elementos Debajo del Adorno */
+        
+}
+
+/* Clase para el Grid del Lore */
+.lore-grid {display: grid; grid-template-columns: repeat(2, 1fr); gap: 80px; align-items: center;}
+
+/* Selector Descendente para el Texto en Párrafos dentro del Lore */
+.lore-text p {margin-bottom: 20px; color: var(--text); font-size: 1.1rem;}
+
+/* Primera Letra del Primer Párrafo del Lore para Crear un Efecto de Letra Capital */
+.lore-text p:first-of-type::first-letter {
+            
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    float: left;                                                                                              /* Flota la Letra a la Izquierda para Crear un Efecto de Letra Capital */
+    line-height: 0.8;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-shadow: 0 0 20px rgba(201,168,76,0.5);
+        
+}
+
+/* Clase para el Stack de Imágenes dentro del Lore */
+.lore-image-stack {position: relative; height: 400px;}
+
+/* Selector Descendente para las Imágenes dentro del Stack de Imágenes del Lore */
+.lore-image-stack img {
+            
+    position: absolute;
+    border: 1px solid var(--dark-purple);
+    object-fit: cover;                                                                                        /* Asegura que las Imágenes Cubran Toda el Área del Stack sin Deformarse */
+        
+}
+
+/* Imagen que sea el Primer Hijo de la Clase */
+.lore-image-stack img:nth-child(1) {
+    
+    width: 75%;
+    height: 70%;
+    top: 0;
+    right: 0;
+    filter: sepia(15%);                                                                                       /* Aplica un Filtro de Sepia para Integrar Mejor la Imagen con la Paleta de Colores del Sitio */
+
+}
+
+/* Imagen que sea el Segundo Hijo de la Clase */
+.lore-image-stack img:nth-child(2) {
+
+    width: 60%;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+    filter: sepia(15%);                                                                                       /* Aplica un Filtro de Sepia para Integrar Mejor la Imagen con la Paleta de Colores del Sitio */
+    border-color: var(--gold-dim);
+
+}
+
+/* PseudoElemento para el Adorno de Esquina en el Stack de Imágenes del Lore */
+.lore-image-stack::after {
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-left: 2px solid var(--gold-dim);
+    border-bottom: 2px solid var(--gold-dim);
+    bottom: -10px;
+    left: -10px;
+    pointer-events: none;                                                                                     /* Permite Interactuar con Elementos Debajo del Adorno */                                                                 
+
+}
+
+/* Clase para las Secciones de Capítulo */
+.chapter-section {
+            
+    position: relative;
+    overflow: hidden;                                                                                         /* Evita que el Contenido se Desborde de la Sección */
+        
+}
+
+/* Aplicar Color de Fondo Alternado para las Secciones de Capítulo para Crear un Efecto de Banda */
+.chapter-section:nth-child(odd) {background: var(--deep-black);}                                              /* Impar: Fondo Más Oscuro para Mayor Contraste con el Texto */
+.chapter-section:nth-child(even) {background: var(--dark-black);}                                             /* Par: Fondo Ligeramente Más Claro para Romper la Monotonía Visual */
+
+/* Clase para el Número de Capítulo Grande y Decorativo */
+.chapter-number {
+
+    position: absolute;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(6rem, 15vw, 12rem);
+    font-weight: 900;
+    color: var(--dark-purple);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;                                                                                     /* Permite Interactuar con Elementos Debajo del Adorno */                                                                 
+    line-height: 1;
+    z-index: 0;                                                                                               /* Detrás del Contenido Principal de la Sección para que No Interfiera con la Lectura */
+
+}
+
+/* Aplicar Estilo para Posicionar el Número de Capítulo a la Derecha o Izquierda Alternadamente */
+.chapter-section:nth-child(odd) .chapter-number  {right: -20px;}                                              /* Secciones Impares: Número de Capítulo a la Derecha */
+.chapter-section:nth-child(even) .chapter-number {left: -20px;}                                               /* Secciones Pares: Número de Capítulo a la Izquierda */
+
+/* Clase para el Contenido Interno de las Secciones de Capítulo */
+.chapter-inner {
+
+    position: relative;
+    z-index: 1;                                                                                               /* Asegura que el Contenido del Capítulo Esté por Encima del Número de Capítulo Decorativo */
+    display: grid;
+    gap: 60px;
+    align-items: center;
+
+}
+
+/* Aplicar Estilo para Alternar la Distribución del Contenido en las Secciones de Capítulo */
+.chapter-inner.layout-left  {grid-template-columns: 1.2fr 0.8fr;}                                             /* Secciones Impares: Contenido Principal a la Izquierda, Imágenes a la Derecha */
+.chapter-inner.layout-right {grid-template-columns: 0.8fr 1.2fr;}                                             /* Secciones Pares: Contenido Principal a la Derecha, Imágenes a la Izquierda */
+
+/* Clase para el Encabezado de las Secciones de Capítulo */
+.chapter-header {margin-bottom: 24px;}
+
+/* Clase para el Tag de Capítulo */
+.chapter-tag {
+            
+    display: inline-block;                                                                                    /* Permite que el Tag se Ajuste al Contenido y Mantenga el Padding */
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    color: var(--black);
+    background: var(--gold-dim);
+    padding: 4px 12px;
+    margin-bottom: 14px;
+
+}
+
+/* Clase para el Título de las Secciones de Capítulo */
+.chapter-title {
+    
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    color: var(--text-bright);
+    margin-bottom: 8px;
+
+}
+
+/* Clase para el Cuerpo de Texto de las Secciones de Capítulo */
+.chapter-body {color: var(--text); font-size: 1.05rem;}
+
+/* Selector Descendente para los Párrafos dentro del Cuerpo de las Secciones de Capítulo */
+.chapter-body p {margin-bottom: 16px;}
+
+/* Selector Descendente para las Citas dentro del Cuerpo de las Secciones de Capítulo */
+.chapter-body blockquote {
+
+    border-left: 2px solid var(--gold-dim);
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--text-dim);
+    background: rgba(201,168,76,0.03);
+
+} 
+
+/* Clase para el Grid de Imágenes dentro de las Secciones de Capítulo */
+.chapter-images {display: grid; gap: 12px; overflow: hidden;}
+
+/* Selector de Ambas Clases para Configurar el Número de Columnas en el Grid */
+.chapter-images.grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+/* Selector de Ambas Clases para Configurar el Número de Columnas en el Grid */
+.chapter-images.grid-3 {grid-template-columns: repeat(3, 1fr);}
+
+/* Selector Descendente para la Primera Imagen dentro del Grid de 3 Columnas */
+.chapter-images.grid-3 img:first-child {grid-column: span 2;}
+
+/* Selector Descendente para las Imágenes dentro del Grid de Imágenes de las Secciones de Capítulo */
+.chapter-images img {
+
+    transform-origin: center center;                                                                          /* Establece el Origen de la Transformación en el Centro */
+    width: 100%;
+    aspect-ratio: 16/10;                                                                                      /* Mantiene una Relación de Aspecto Consistente para Todas las Imágenes */
+    object-fit: cover;                                                                                        /* Asegura que las Imágenes Cubran Toda el Área del Grid sin Deformarse */
+    border: 1px solid var(--dark-purple);
+    transition: all 0.4s;                                                                                     /* Transición Suave para el Cambio de Estilo al Hover */
+    filter: brightness(0.85) sepia(10%);                                                                      /* Aplica Filtro de Brillo y Sepia para Integrar Mejor las Imágenes con la Paleta de Colores del Sitio */              
+
+}
+
+/* PseudoClase para el Efecto Hover de las Imágenes dentro del Grid de Imágenes de las Secciones de Capítulo */
+.chapter-images img:hover {
+ 
+    filter: brightness(1) sepia(0%);                                                                          /* Elimina el Filtro de Brillo y Sepia al Hover */
+    border-color: var(--gold-dim);
+    transform: scale(1.02);
+
+}
+
+/* Clase para el Banner de Advertencia entre Secciones de Capítulo */
+.danger-banner {
+   
+    background: linear-gradient(135deg, var(--red) 0%, #3d0000 100%);
+    border-top: 1px solid var(--red-bright);
+    border-bottom: 1px solid var(--red-bright);
+    padding: 16px 40px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    color: #ff9999;
+    overflow: hidden;                                                                                         /* Evita que el Contenido se Desborde del Banner */
+    position: relative;                                                                                       /* Posicionamiento Relativo para Contener los PseudoElementos de Adorno */
+
+}
+
+/* Aplicar Contenido y Color a los PseudoElementos Antes del Banner*/
+.danger-banner::before, .danger-banner::after {content: '⚔ '; color: var(--red-bright);}
+
+/* Clase para la Sección de Muertes */
+.deaths-section {background: var(--black);padding: 80px 0;}
+
+/* Clase para el Grid de Muertes dentro de la Sección de Muertes */
+.deaths-grid {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);                                                                    /* Configura el Grid para Mostrar 6 Tarjetas de Muerte por Fila */
+    gap: 1px;
+    background: var(--dark-purple);
+    border: 1px solid var(--dark-purple);
+    margin-top: 40px;
+    
+}
+
+/* Clase para las Tarjetas de Muerte dentro del Grid de Muertes */
+.death-card {
+    
+    background: var(--panel-black);
+    padding: 28px 24px;
+    transition: background 0.3s;                                                                              /* Transición Suave para el Cambio de Fondo al Hover */
+
+}
+
+/* PseudoClase para el Efecto Hover de las Tarjetas de Muerte dentro del Grid de Muertes */
+.death-card:hover {background: var(--dark-black);}
+
+/* Selector Descendente para el Icono de Muerte dentro de las Tarjetas de Muerte */
+.death-icon {font-size: 1.8rem; margin-bottom: 12px; display: block;}
+
+/* Clase para el Nombre del Personaje Muerto dentro de las Tarjetas de Muerte */
+.death-name {
+
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--red-bright);
+    text-transform: uppercase;                                                                                /* Transforma el Texto a Mayúsculas */
+    margin-bottom: 8px;
+
+}
+
+/* Clase para la Descripción de la Muerte dentro de las Tarjetas de Muerte */
+.death-desc {font-size: 0.9rem; color: var(--text-dim);}
+
+/* Clase para la Sección Final del Portafolio del Videojuego */
+.ending-section {
+
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;                                                                                         /* Evita que el Contenido se Desborde de la Sección, Importante para el Fondo Absoluto */
+
+}
+
+/* Clase para el Fondo de la Sección Final del Portafolio del Videojuego */
+.ending-bg {
+    
+    position: absolute;
+    inset: 0;                                                                                                 /* Cubre toda el Área de la Sección */
+
+}
+
+/* Selector Descendente para las Imágenes dentro del Fondo de la Sección Final */
+.ending-bg img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.25) sepia(30%);                                                                      /* Aplica Filtro de Brillo y Sepia para Crear un Fondo Oscuro y Cálido que se Integre Mejor */
+
+}
+
+/* Clase para el Overlay de la Sección Final del Portafolio del Videojuego */
+.ending-overlay {
+
+    position: absolute;
+    inset: 0;                                                                                                 /* Cubre toda el Área de la Sección */
+    background: linear-gradient(to right, rgba(5,4,8,0.95) 40%, rgba(5,4,8,0.3) 100%);
+
+}
+
+/* Clase para el Contenido Principal dentro de la Sección Final */
+.ending-content {
+    
+    position: relative;                                                                                     
+    z-index: 1;                                                                                               /* Asegura que el Contenido de la Sección Final Esté por Encima del Fondo */
+    max-width: 580px;
+    
+}
+
+/* Selector Descendente para el Título dentro del Contenido de la Sección Final */        
+.ending-content .section-title {font-size: clamp(2rem, 5vw, 3.5rem);}
+
+/* Selector Descendente para el Párrafo dentro del Contenido de la Sección Final */
+.ending-content p {font-size: 1.15rem; color: var(--text); margin-bottom: 20px;}
+
+/* Clase para la Sección de Descarga del Videojuego */
+.download-section {
+
+    background: var(--deep-black);
+    text-align: center;
+    padding: 100px 40px;
+    position: relative;
+    overflow: hidden;                                                                                         /* Evita que el Contenido se Desborde de la Sección */
+
+}
+
+/* PseudoElemento para el Adorno de Fondo en la Sección de Descarga */
+.download-section::before {
+
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(201,168,76,0.05) 0%, transparent 70%);
+    pointer-events: none;                                                                                     /* Permite Interactuar con Elementos Debajo del Adorno */
+
+}
+
+/* Selector Descendente para el Título, el Divisor y el Parráfo dentro de la Sección de Descarga */
+.download-section .section-title {text-align: center;}                                                        /* Asegura que el Título esté Centrado */
+.download-section .section-rule {margin: 0 auto 30px;}                                                        /* Centra el Divisor y agrega Margen Inferior para Separarlo del Contenido */
+.download-section p {max-width: 500px; margin: 0 auto 40px; color: var(--text-dim); font-size: 1.05rem; }     /* Centra el Párrafo, limita Ancho Máximo, agrega Margen Inferior y aplica Estilo de Color */
+
+/* Clase para el Botón de Descarga dentro de la Sección de Descarga */
+.download-btn {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 50px;
+    background: linear-gradient(135deg, var(--gold-dim), var(--gold));
+    color: var(--black);
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* PseudoClase para el Efecto Hover del Botón de Descarga dentro de la Sección de Descarga */
+.download-btn:hover {transform: translateY(-3px); box-shadow: 0 10px 40px rgba(201,168,76,0.3);}
+
+/* Clase para el Icono dentro del Botón de Descarga */
+.version-badge {
+
+    display: inline-block;                                                                                    /* Permite que el Badge se Ajuste al Contenido y Mantenga el Padding */
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    color: var(--text-dim);
+    border: 1px solid var(--dark-purple);
+    padding: 6px 16px;
+    margin-top: 20px;
+
+}
+
+/* Selector de Elemento HTML para el Footer del Sitio */
+footer {
+
+    background: var(--black);
+    border-top: 1px solid var(--dark-purple);
+    padding: 40px;
+    text-align: center;
+
+}
+
+/* Clase para el Logo del Footer */
+.footer-logo {
+
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.2rem;
+    color: var(--gold-dim);
+    margin-bottom: 12px;
+
+}
+
+/* Selectores Descendentes para el Texto y los Enlaces dentro del Footer */
+footer p {font-size: 0.85rem; color: var(--text-dim);}                                                        /* Estilo para el Texto en Parráfos del Footer */
+footer a {color: var(--gold-dim); text-decoration: none;}                                                     /* Estilo para los Enlaces del Footer */
+
+/* PseudoClase para el Efecto Hover de los Enlaces en el Footer */
+footer a:hover {color: var(--gold);}
+
+/* Clase para el Efecto de Aparición con Desplazamiento (Fade-In) */
+.fade-in {
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;                                                       /* Transición Suave para Opacidad y el Desplazamiento Vertical */
+}
+
+/* Selector de Ambas Clases para Activar el Efecto de Aparición con Desplazamiento */
+.fade-in.visible {opacity: 1; transform: translateY(0);}
+
+/* Responsive para Pantallas Pequeñas */
+@media (max-width: 900px) {                                                                                   /* Pantallas Menores a 900px de Ancho */
+
+    nav {padding: 16px 20px;}                                                                                 /* Navegación: Reducir Padding */
+    .nav-links {display: none;}                                                                               /* Ocultar Enlaces para Simplificar el Diseño */
+    .container {padding: 0 20px;}                                                                             /* Contenedor Principal: Reducir Padding Lateral */
+    .lore-grid {grid-template-columns: 1fr;}                                                                  /* Lore Grid: Cambiar a una Sola Columna */
+    .lore-image-stack {height: 260px;}                                                                        /* Lore Image Stack: Reducir Altura */
+    .chapter-inner.layout-left, .chapter-inner.layout-right {grid-template-columns: 1fr;}                     /* Secciones de Capítulo: Cambiar a una Sola Columna */
+    .chapter-section:nth-child(even) .chapter-images {order: -1;}                                             /* Secciones Pares: Mover Imágenes Antes del Texto */
+    .chapter-number {display: none;}                                                                          /* Ocultar Número de Capítulo Grande */
+    .deaths-grid {grid-template-columns: repeat(2, 1fr);}                                                     /* Reducir el Número de Columnas en el Grid de Muertes a 2 */
+
+}
+
+/*****************************************************************************************************************************************************************************/
