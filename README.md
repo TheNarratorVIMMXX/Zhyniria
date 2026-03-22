@@ -236,17 +236,6 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ---
 
-## 🧠 Desarrollo asistido por IA
-Esta página web fue desarrollada mientras aprendo desarrollo Frontend,
-apoyándome en herramientas de inteligencia artificial como parte del proceso de aprendizaje:
-- **Claude (Anthropic):** apoyo en la estructura general y diseño visual de la página
-- **ChatGPT (OpenAI):** resolución de dudas puntuales de sintaxis en HTML, CSS y JavaScript
-
-Todo el código fue leído, comprendido y ajustado manualmente,
-usando la IA como guía y no como reemplazo del aprendizaje.
-
----
-
 ## 📞 Soporte y Contacto
 
 ¿Tienes problemas? ¿Necesitas ayuda con algún puzzle?
