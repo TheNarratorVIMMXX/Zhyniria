@@ -236,6 +236,18 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ---
 
+## 🧠 Desarrollo asistido
+
+La página web de presentación de este repositorio fue desarrollada con apoyo de inteligencia artificial, utilizada como herramienta para:
+
+- Consulta de sintaxis de HTML, CSS y JavaScript
+- Generación de ideas de diseño e interfaz
+- Optimización de estilos y estructura visual
+
+Todo el código fue revisado, comprendido y modificado manualmente.
+
+---
+
 ## 📞 Soporte y Contacto
 
 ¿Tienes problemas? ¿Necesitas ayuda con algún puzzle?
