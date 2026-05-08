@@ -4,7 +4,7 @@
 <!-- Ultima Modificación: 21/03/2026 -->
 <!-- Autor: Magallanes López Carlos Gabriel -->
 <!-- Correo: cgmagallanes23@gmail.com -->
-<!-- Versión: 1.0 -->
+<!-- Versión: 1.1 -->
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración de Tipo de Documento y Metadatos -->
@@ -33,10 +33,9 @@
         <ul class="nav-links">                                                                                                                                                              <!-- Lista sin Orden Enlaces -->
         
             <!-- Cada enlace apunta a una sección específica de la página, utilizando anclas (<a href="#lore"> -> id="lore") para facilitar la navegación. -->
-
-            <li><a href="#lore">Historia</a></li>                                                                                                                                           <!-- Enlace Sección Lore -->
-            <li><a href="#capitulo-1">Capítulos</a></li>                                                                                                                                    <!-- Enlace Sección Caps -->
-            <li><a href="#descargar">Descargar</a></li>                                                                                                                                     <!-- Enlace Sección Descargar -->
+            <li><a href="#lore" data-i18n="navStory">Historia</a></li>
+            <li><a href="#capitulo-1" data-i18n="navChapters">Capítulos</a></li>
+            <li><a href="#descargar" data-i18n="navDownload">Descargar</a></li>
         
         </ul>
     </nav>
@@ -45,14 +44,16 @@
     <section class="hero">                                                                                                                                                                  <!-- Sección Principal -->                          
         <div class="hero-overlay"></div>                                                                                                                                                    <!-- Overlay -->
         <div class="hero-content">                                                                                                                                                          <!-- Contenido Principal -->
-            <span class="hero-eyebrow">Una aventura de texto psicológica</span>                                                                                                             <!-- Eyebrow -->
+            <span class="hero-eyebrow" data-i18n="heroEyebrow">Una aventura de texto psicológica</span>
             <h1 class="hero-title">Zhyniria</h1>                                                                                                                                            <!-- Título Principal -->
-            <p class="hero-subtitle">Las Sombras del Abismo</p>                                                                                                                             <!-- Subtítulo -->
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Las Sombras del Abismo</p>                                                                                                    <!-- Subtítulo -->
             <div class="hero-divider"></div>                                                                                                                                                <!-- Divisor -->
-            <p class="hero-quote">"Hace millones de años, una enorme torre apareció... Ahora, debes descubrir sus secretos o ser consumido por la oscuridad que hay en su interior."</p>    <!-- Cita Principal -->
-            <a href="#lore" class="hero-cta">Descubrir la historia</a>                                                                                                                      <!-- Llamado a la Acción -->
+            <p class="hero-quote" data-i18n="heroQuote">                                                                                                                                    <!-- Cita Principal -->
+                "Hace millones de años, una enorme torre apareció... Ahora, debes descubrir sus secretos o ser consumido por la oscuridad que hay en su interior."
+             </p>    
+            <a href="#lore" class="hero-cta" data-i18n="heroCta">Descubrir la historia</a>                                                                                                  <!-- Llamado a la Acción -->
         </div>
-        <div class="scroll-indicator">Explorar</div>                                                                                                                                        <!-- Indicador Desplazamiento -->
+        <div class="scroll-indicator" data-i18n="heroScroll">Explorar</div>                                                                                                                 <!-- Indicador Desplazamiento -->
     </section>
 
     <!-- Sección de Historia -->
@@ -60,26 +61,26 @@
         <div class="container">                                                                                                                                                             <!-- Contenedor -->
             <div class="lore-grid fade-in">                                                                                                                                                 <!-- Grid, Texto e Imágenes -->
                 <div class="lore-text">                                                                                                                                                     <!-- Texto de la Historia -->
-                    <span class="section-label">El Mundo</span>                                                                                                                             <!-- Etiqueta de Sección -->
-                    <h2 class="section-title">La Torre de los Sueños</h2>                                                                                                                   <!-- Título de Sección -->
+                    <span class="section-label" data-i18n="loreLabel">El Mundo</span>                                                                                                       <!-- Etiqueta de Sección -->
+                    <h2 class="section-title" data-i18n="loreTitle">La Torre de los Sueños</h2>                                                                                             <!-- Título de Sección -->
                     <div class="section-rule"></div>                                                                                                                                        <!-- Regla de Sección -->
                     
                     <!-- Texto de la Historia -->
-                    <p>
+                    <p data-i18n="lorePara1">
                         En el mundo de Zhyniria existe un lugar que los antiguos llamaban la Torre de los Sueños. Nadie sabe quién la construyó ni cuándo apareció, pero su presencia ha 
                         definido la historia de civilizaciones enteras. Una estructura colosal que desafía el tiempo, la lógica y el miedo.
                     </p>
-                    <p>
+                    <p data-i18n="lorePara2">
                         Durante siglos, la torre fue un faro de poder arcano. Pero con el paso de los años, algo cambió. La barrera entre los sueños y las pesadillas comenzó a debilitarse
                          desde adentro, y la oscuridad tomó el control.
                     </p>
-                    <p>
+                    <p data-i18n="lorePara3">
                         Hoy, la torre no es solo un lugar físico. Es un reflejo del alma de quienes se atreven a entrar. Cada habitación, cada puzzle, cada decisión revela algo sobre el 
                         explorador que los enfrenta.
                     </p>
 
                     <!-- Cita de la Historia -->
-                    <p><strong style="color: var(--gold);">¿Tienes lo que se necesita para descubrir sus secretos?</strong></p>
+                    <p><strong style="color: var(--gold);" data-i18n="loreQuestion">¿Tienes lo que se necesita para descubrir sus secretos?</strong></p>
                 
                 </div>
                 <div class="lore-image-stack">                                                                                                                                              <!-- Pila de Imágenes -->
@@ -91,7 +92,7 @@
     </section>
 
     <!-- Banner de Advertencia -->
-    <div class="danger-banner">Advertencia: cada decisión tiene consecuencias permanentes — no hay vuelta atrás</div>
+    <div class="danger-banner" data-i18n="dangerBanner">Advertencia: cada decisión tiene consecuencias permanentes — no hay vuelta atrás</div>
 
     <!-- Capítulo 1 -->
     <section class="chapter-section" id="capitulo-1">                                                                                                                                       <!-- Sección Capítulo 1 -->
@@ -100,26 +101,26 @@
             <div class="chapter-inner layout-left fade-in">                                                                                                                                 <!-- Contenido del Capítulo, Diseño Izquierda, Animación -->
                 <div class="chapter-text">                                                                                                                                                  <!-- Texto del Capítulo -->
                     <div class="chapter-header">                                                                                                                                            <!-- Encabezado del Capítulo -->
-                        <span class="chapter-tag">Capítulo 1</span>                                                                                                                         <!-- Etiqueta del Capítulo -->
-                        <h3 class="chapter-title">La Cámara de Entrada</h3>                                                                                                                 <!-- Título del Capítulo -->
-                        <p style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">La Incertidumbre</p>                  <!-- Título del Capítulo -->
+                        <span class="chapter-tag" data-i18n="ch1Tag">Capítulo 1</span>                                                                                                      <!-- Etiqueta del Capítulo -->
+                        <h3 class="chapter-title" data-i18n="ch1Title">La Cámara de Entrada</h3>                                                                                            <!-- Título del Capítulo -->
+                        <p data-i18n="ch1Sub" style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">La Incertidumbre</p><!-- Título del Capítulo -->
                     </div>
                     <div class="chapter-body">
                         
                         <!-- Texto del Capítulo -->
-                        <p>
+                        <p data-i18n="ch1Para1">
                             Cruzas el umbral y la puerta se cierra detrás de ti con un golpe que resuena en toda la torre. La primera habitación parece ordinaria — un reloj, unos libros,
                              un cofre — pero nada en Zhyniria es lo que parece.
                         </p>
-                        <p>
+                        <p data-i18n="ch1Para2">
                             Cada objeto esconde un fragmento del código que abre la siguiente puerta. Tendrás que observar, analizar y decidir sabiamente. Un error puede significar el fin.
                         </p>
                         
                         <!-- Cita del Capítulo -->
-                        <blockquote>"El tiempo no espera a los indecisos. Las manecillas del reloj son tu primera lección."</blockquote>
+                        <blockquote data-i18n="ch1Quote">"El tiempo no espera a los indecisos. Las manecillas del reloj son tu primera lección."</blockquote>
                         
                         <!-- Texto Final del Capítulo -->
-                        <p>Tres intentos. Un código. La diferencia entre avanzar o convertirte en otra historia que la torre nunca contará.</p>
+                        <p data-i18n="ch1Final">Tres intentos. Un código. La diferencia entre avanzar o convertirte en otra historia que la torre nunca contará.</p>
                     
                     </div>
                 </div>
@@ -145,27 +146,27 @@
                 </div>                                                                                                                                                                      <!-- Fin de Imágenes del Capítulo -->
                 <div class="chapter-text">                                                                                                                                                  <!-- Texto del Capítulo -->
                     <div class="chapter-header">                                                                                                                                            <!-- Encabezado del Capítulo -->
-                        <span class="chapter-tag">Capítulo 2</span>                                                                                                                         <!-- Etiqueta del Capítulo -->
-                        <h3 class="chapter-title">La Habitación de las Cenizas</h3>                                                                                                         <!-- Título del Capítulo -->
-                        <p style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">Los Fragmentos</p>                    <!-- Título del Capítulo -->
+                        <span class="chapter-tag" data-i18n="ch2Tag">Capítulo 2</span>                                                                                                      <!-- Etiqueta del Capítulo -->
+                        <h3 class="chapter-title" data-i18n="ch2Title">La Habitación de las Cenizas</h3>                                                                                    <!-- Título del Capítulo -->
+                        <p data-i18n="ch2Sub" style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">Los Fragmentos</p> <!-- Título del Capítulo -->
                     </div>
                     <div class="chapter-body">                                                                                                                                              <!-- Cuerpo del Capítulo -->
                         
                         <!-- Texto del Capítulo -->
-                        <p>
+                        <p data-i18n="ch2Para1">
                             El aire se vuelve espeso. Las cenizas caen como una lluvia silenciosa que quema los pulmones de quienes no se protegen. Esta habitación no solo pone a prueba tu
                             ingenio — pone a prueba tu resistencia.
                         </p>
-                        <p>
+                        <p data-i18n="ch2Para2">
                             Tu objetivo: encontrar cinco fragmentos de espejo escondidos entre los muebles, mientras administras cuidadosamente tu salud. Cada movimiento incorrecto te
                             debilita. 
-                        </p>
+                        </p">
                         
                         <!-- Cita del Capítulo -->
-                        <blockquote>"El espejo roto refleja la verdad que los ojos sanos se niegan a ver."</blockquote>
+                        <blockquote data-i18n="ch2Quote">"El espejo roto refleja la verdad que los ojos sanos se niegan a ver."</blockquote>
                         
                         <!-- Texto Final del Capítulo -->
-                        <p>Dos vendajes. Cuatro lugares para buscar. Decisiones que pueden salvarte o hundirte antes de llegar a la siguiente habitación.</p>
+                        <p data-i18n="ch2Final">Dos vendajes. Cuatro lugares para buscar. Decisiones que pueden salvarte o hundirte antes de llegar a la siguiente habitación.</p>
                     </div>
                 </div>
             </div>
@@ -179,27 +180,27 @@
             <div class="chapter-inner layout-left fade-in">                                                                                                                                 <!-- Contenido, Diseño, Animación -->
                 <div class="chapter-text">                                                                                                                                                  <!-- Texto del Capítulo -->
                     <div class="chapter-header">                                                                                                                                            <!-- Encabezado del Capítulo -->
-                        <span class="chapter-tag">Capítulo 3</span>                                                                                                                         <!-- Etiqueta del Capítulo -->
-                        <h3 class="chapter-title">El Desafío del Diario</h3>                                                                                                                <!-- Título del Capítulo -->
-                        <p style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">La Verdad Oculta</p>                  <!-- Descripción del Capítulo -->
+                        <span class="chapter-tag" data-i18n="ch3Tag">Capítulo 3</span>                                                                                                      <!-- Etiqueta del Capítulo -->
+                        <h3 class="chapter-title" data-i18n="ch3Title">El Desafío del Diario</h3>                                                                                           <!-- Título del Capítulo -->
+                        <p data-i18n="ch3Sub" style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">La Verdad Oculta</p><!-- Descripción del Capítulo -->
                     </div>
                     <div class="chapter-body">                                                                                                                                              <!-- Cuerpo del Capítulo -->
                         
                         <!-- Texto del Capítulo -->
-                        <p>
+                        <p data-i18n="ch3Para1">
                             En el centro de la habitación, un diario abierto. Sus páginas incompletas revelan la historia de alguien que estuvo aquí antes que tú — y que nunca salió. Las 
                             palabras faltantes son la llave.
                         </p>
-                        <p>
+                        <p data-i18n="ch3Para2">
                             Este capítulo pone a prueba tu capacidad de observación y memoria. Los patrones están ahí, ocultos en las palabras que el diario sí tiene. Solo necesitas leer
                             entre líneas.
-                        </p>
+                        </p >
                         
                         <!-- Cita del Capítulo -->
-                        <blockquote>"Me miro al espejo y apenas reconozco al que devuelve la mirada; ¿seré yo o solo la sombra de quien quise ser?"</blockquote>
+                        <blockquote data-i18n="ch3Quote">"Me miro al espejo y apenas reconozco al que devuelve la mirada; ¿seré yo o solo la sombra de quien quise ser?"</blockquote>
                         
                         <!-- Texto Final del Capítulo -->
-                        <p>Tres intentos para descifrar el código. Una decisión final que definirá si la torre te libera o te consume para siempre.</p>
+                        <p data-i18n="ch3Final">Tres intentos para descifrar el código. Una decisión final que definirá si la torre te libera o te consume para siempre.</p>
                     </div>
                 </div>
                 <div class="chapter-images"><img src="imgs/cap3.png" alt="El diario" style="aspect-ratio: 4/3;"></div>                                                                      <!-- Imagen del Capítulo -->
@@ -220,29 +221,29 @@
                 </div>
                 <div class="chapter-text">                                                                                                                                                  <!-- Texto del Capítulo -->
                     <div class="chapter-header">                                                                                                                                            <!-- Encabezado del Capítulo -->
-                        <span class="chapter-tag">Capítulo 4</span>                                                                                                                         <!-- Etiqueta del Capítulo -->
-                        <h3 class="chapter-title">Las Cinco Estatuas</h3>                                                                                                                   <!-- Título del Capítulo -->
-                        <p style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">El Juicio Final</p>                   <!-- Descripción del Capítulo -->
+                        <span class="chapter-tag" data-i18n="ch4Tag">Capítulo 4</span>                                                                                                      <!-- Etiqueta del Capítulo -->
+                        <h3 class="chapter-title" data-i18n="ch4Title">Las Cinco Estatuas</h3>                                                                                              <!-- Título del Capítulo -->
+                        <p data-i18n="ch4Sub" style="font-family:'Cinzel',serif; font-size:0.7rem; letter-spacing:3px; color:var(--text-dim); text-transform:uppercase;">El Juicio Final</p><!-- Descripción del Capítulo -->
                     </div>
                     <div class="chapter-body">                                                                                                                                              <!-- Cuerpo del Capítulo -->
                         
                         <!-- Texto del Capítulo -->
-                        <p>
+                        <p data-i18n="ch4Para1">
                             La última habitación es la más grande y la más oscura. Cinco estatuas de piedra te rodean, cada una representando a una de las hermanas que gobernaron la torre
                             en tiempos antiguos.
                         </p>
-                        <p>
+                        <p data-i18n="ch4Para2">
                             Cada estatua tiene su propio acertijo, su propio precio. Fallar no solo significa retroceder — en esta habitación, las consecuencias son definitivas. La 
                             linterna que encontraste es tu única fuente de luz.
                         </p>
                         
                         <!-- Cita del Capítulo -->
-                        <blockquote>
+                        <blockquote data-i18n="ch4Quote">
                             "Tu certeza es más afilada que cualquier cuchillo en esta torre; avanzas sin dudar, porque sabes que la victoria ya está atrapada entre tus manos."
                         </blockquote>
                         
                         <!-- Texto Final del Capítulo -->
-                        <p>
+                        <p data-i18n="ch4Final">
                             Cuatro acertijos encadenados. Códigos, palabras, coordenadas y decisiones de vida o muerte. Este es el corazón de la torre — y solo los más agudos llegarán a 
                             ver lo que hay más allá.
                         </p>
@@ -256,43 +257,45 @@
     <section class="deaths-section">                                                                                                                                                        <!-- Sección de Peligros -->
         <div class="container">                                                                                                                                                             <!-- Contenedor -->
             <div class="fade-in">                                                                                                                                                           <!-- Animación -->
-                <span class="section-label">Los Peligros de la Torre</span>                                                                                                                 <!-- Etiqueta de Sección -->
-                <h2 class="section-title">Formas de Morir</h2>                                                                                                                              <!-- Título de Sección -->
+                <span class="section-label" data-i18n="deathsLabel">Los Peligros de la Torre</span>                                                                                         <!-- Etiqueta de Sección -->
+                <h2 class="section-title" data-i18n="deathsTitle">Formas de Morir</h2>                                                                                                      <!-- Título de Sección -->
                 <div class="section-rule"></div>                                                                                                                                            <!-- Regla de Sección -->
-                <p style="color:var(--text-dim); max-width:500px;">La torre no perdona. Cada error tiene un precio. ¿Cuántos de estos destinos serás capaz de evitar?</p>                   <!-- Descripción de Sección -->
+                <p data-i18n="deathsDesc" style="color:var(--text-dim); max-width:500px;">                                                                                                  <!-- Descripción de Sección -->
+                    La torre no perdona. Cada error tiene un precio. ¿Cuántos de estos destinos serás capaz de evitar?
+                </p>                   
             </div>
             
             <!-- Grid de Peligros, Animación. Con Icono, Nombre y Descripción -->
             <div class="deaths-grid fade-in">                                                                                                                                     
                 <div class="death-card">                                                                                                                                
                     <span class="death-icon">💨</span>                                                                                                                    
-                    <p class="death-name">Asfixia</p>                                                                                                                    
-                    <p class="death-desc">Las cenizas llenan tus pulmones si no te proteges a tiempo.</p>                                                                
+                    <p class="death-name" data-i18n="death1Name">Asfixia</p>                                                                                                                    
+                    <p class="death-desc" data-i18n="death1Desc">Las cenizas llenan tus pulmones si no te proteges a tiempo.</p>                                                                
                 </div>
                 <div class="death-card">                                                                                                                                       
                     <span class="death-icon">🔢</span>                                                                                                                       
-                    <p class="death-name">Código Incorrecto</p>                                                                                                                     
-                    <p class="death-desc">Tres intentos fallidos y la torre decide que no mereces continuar.</p>                                                                
+                    <p class="death-name" data-i18n="death2Name">Código Incorrecto</p>                                                                                                                     
+                    <p class="death-desc" data-i18n="death2Desc">Tres intentos fallidos y la torre decide que no mereces continuar.</p>                                                                
                 </div>
                 <div class="death-card">
                     <span class="death-icon">⚙️</span>
-                    <p class="death-name">Trampa Mortal</p>
-                    <p class="death-desc">Algunos objetos fueron puestos ahí para los curiosos imprudentes.</p>
+                    <p class="death-name" data-i18n="death3Name">Trampa Mortal</p>
+                    <p class="death-desc" data-i18n="death3Desc">Algunos objetos fueron puestos ahí para los curiosos imprudentes.</p>
                 </div>
                 <div class="death-card">
                     <span class="death-icon">🪨</span>
-                    <p class="death-name">Aplastamiento</p>
-                    <p class="death-desc">Los mecanismos de piedra no distinguen entre enemigos y exploradores.</p>
+                    <p class="death-name" data-i18n="death4Name">Aplastamiento</p>
+                    <p class="death-desc" data-i18n="death4Desc">Los mecanismos de piedra no distinguen entre enemigos y exploradores.</p>
                 </div>
                 <div class="death-card">
                     <span class="death-icon">⏳</span>
-                    <p class="death-name">Ansiedad Fatal</p>
-                    <p class="death-desc">Dudar demasiado en momentos críticos tiene consecuencias permanentes.</p>
+                    <p class="death-name" data-i18n="death5Name">Ansiedad Fatal</p>
+                    <p class="death-desc" data-i18n="death5Desc">Dudar demasiado en momentos críticos tiene consecuencias permanentes.</p>
                 </div>
                 <div class="death-card">
                     <span class="death-icon">❓</span>
-                    <p class="death-name">Y más...</p>
-                    <p class="death-desc">La torre guarda secretos que solo descubrirás al entrar.</p>
+                    <p class="death-name" data-i18n="death6Name">Y más...</p>
+                    <p class="death-desc" data-i18n="death6Desc">La torre guarda secretos que solo descubrirás al entrar.</p>
                 </div>
             </div>
         </div>
@@ -306,14 +309,18 @@
         <div class="ending-overlay"></div>                                                                                                                                                  <!-- Overlay del Final -->
         <div class="container">                                                                                                                                                             <!-- Contenedor -->
             <div class="ending-content fade-in">                                                                                                                                            <!-- Contenido del Final, Animación -->
-                <span class="section-label">El Destino Te Espera</span>                                                                                                                     <!-- Etiqueta del Final -->
-                <h2 class="section-title">¿Llegarás al Final?</h2>                                                                                                                          <!-- Título del Final -->
+                <span class="section-label" data-i18n="endingLabel">El Destino Te Espera</span>                                                                                                                     <!-- Etiqueta del Final -->
+                <h2 class="section-title" data-i18n="endingTitle">¿Llegarás al Final?</h2>                                                                                                                          <!-- Título del Final -->
                 <div class="section-rule"></div>                                                                                                                                            <!-- Regla del Final -->
             
                 <!-- Texto del Final -->
-                <p>Muy pocos llegan a ver lo que hay más allá de las cinco estatuas. La torre ha consumido a cientos de almas valientes que creyeron estar preparadas.</p>   
-                <p>El final de Zhyniria no es solo una recompensa. Es una revelación sobre la naturaleza misma de los sueños, las pesadillas y el precio de la curiosidad.</p>
-                <p style="color:var(--gold); font-style:italic;">"La torre te espera, valiente aventurero. La elección es tuya... si te atreves a entrar."</p>
+                <p data-i18n="endingPara1">
+                    Muy pocos llegan a ver lo que hay más allá de las cinco estatuas. La torre ha consumido a cientos de almas valientes que creyeron estar preparadas.
+                </p>   
+                <p data-i18n="endingPara2">
+                    El final de Zhyniria no es solo una recompensa. Es una revelación sobre la naturaleza misma de los sueños, las pesadillas y el precio de la curiosidad.
+                </p>
+                <p style="color:var(--gold); font-style:italic;" data-i18n="endingQuote">"La torre te espera, valiente aventurero. La elección es tuya... si te atreves a entrar."</p>
             </div>
         </div>
     </section>
@@ -322,13 +329,13 @@
     <section class="download-section" id="descargar">                                                                                                                                       <!-- Sección de Descarga -->
         <div class="container">                                                                                                                                                             <!-- Contenedor -->
             <div class="fade-in">                                                                                                                                                           <!-- Animación -->
-                <span class="section-label" style="text-align:center; display:block;">Disponible Ahora</span>                                                                               <!-- Etiqueta de Sección -->
-                <h2 class="section-title">Comienza tu Aventura</h2>                                                                                                                         <!-- Título de Sección -->
+                <span class="section-label" style="text-align:center; display:block;" data-i18n="downloadLabel">Disponible Ahora</span>                                                     <!-- Etiqueta de Sección -->
+                <h2 class="section-title" data-i18n="downloadTitle">Comienza tu Aventura</h2>                                                                                               <!-- Título de Sección -->
                 <div class="section-rule"></div>                                                                                                                                            <!-- Regla de Sección -->
-                <p>Descarga Zhyniria gratis y descubre si eres capaz de sobrevivir a las sombras del abismo. Solo necesitas Windows y el valor suficiente.</p>                              <!-- Descripción de Sección -->
-                <a href="https://github.com/TheNarratorVIMMXX/Zhyniria/releases/latest" class="download-btn" target="_blank">  ⚔ Descargar Zhyniria.exe </a>                                <!-- Botón de Descarga -->
+                <p data-i18n="downloadDesc">Descarga Zhyniria gratis y descubre si eres capaz de sobrevivir a las sombras del abismo. Solo necesitas Windows y el valor suficiente.</p>     <!-- Descripción de Sección -->
+                <a href="https://github.com/TheNarratorVIMMXX/Zhyniria/releases/latest" class="download-btn" data-i18n="downloadBtn" target="_blank">  ⚔ Descargar Zhyniria.exe </a>       <!-- Botón de Descarga -->
                 <br>                                                                                                                                                                        <!-- Salto de Línea-->
-                <span class="version-badge">Versión 1.0 — Edición Completa — Gratuito</span>                                                                                                <!-- Etiqueta de Versión -->
+                <span class="version-badge" data-i18n="downloadBadge">Versión 1.0 — Edición Completa — Gratuito</span>                                                                      <!-- Etiqueta de Versión -->
             </div>
         </div>
     </section>
@@ -337,7 +344,8 @@
     <footer>
         <p class="footer-logo">Zhyniria</p>                                                                                                                                                 <!-- Logo de Pie de Página -->
         <p>© 2025 ModeX Development Team &nbsp;·&nbsp;                                                                                                                                      <!-- Derechos de Autor -->
-            <a href="https://github.com/TheNarratorVIMMXX/Zhyniria" target="_blank">GitHub</a> &nbsp;·&nbsp; <a href="mailto:cgmagallanes23@gmail.com">Contacto</a>                         <!-- Enlaces Pie de Página -->
+            <a href="https://github.com/TheNarratorVIMMXX/Zhyniria" target="_blank">GitHub</a> &nbsp;·&nbsp; 
+            <a href="https://mailto:cgmagallanes23@gmail.com" data-i18n="footerContact">Contacto</a>                        
         </p>
     </footer>
 
