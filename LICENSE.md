@@ -1,4 +1,4 @@
-# PROPRIETARY SOFTWARE LICENSE
+# PROPIETARY SOFTWARE LICENSE
 
 **Copyright © 2025 Carlos Gabriel Magallanes López**  
 **All Rights Reserved**
