@@ -1,8 +1,25 @@
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+
 # 🌑 Zhyniria: Las Sombras del Abismo
+
+![C++](https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Plataforma-Multiplataforma-0078D6?style=for-the-badge&logo=multiplatform&logoColor=white)
+![Tipo](https://img.shields.io/badge/Tipo-Aventura_de_Texto-8B008B?style=for-the-badge)
+![Capítulos](https://img.shields.io/badge/Cap%C3%ADtulos-4-darkred?style=for-the-badge)
+![Licencia](https://img.shields.io/badge/Licencia-Propietaria-green?style=for-the-badge)
+![Versión](https://img.shields.io/badge/Versi%C3%B3n-1.0-gold?style=for-the-badge)
 
 **Una Oscura Aventura de Texto a Través de una Torre Antigua**
 
 > *"Hace millones de años, una enorme torre apareció... Ahora, debes descubrir sus secretos o ser consumido por la oscuridad que hay en su interior."*
+
+---
+
+## 🎬 Vista Previa
+
+<div align="center">
+  <img src="assets/preview.gif" alt="Vista Previa de Zhyniria"/>
+</div>
 
 ---
 
@@ -18,30 +35,30 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ## 🎮 Características del Juego
 
-### 🌟 **Narrativa Inmersiva**
+### 🌟 Narrativa Inmersiva
 - Narrativa que te atrapa con múltiples giros de situaciones
 - 4 capítulos completos, cada uno con desafíos únicos
 - Múltiples perspectivas de personajes para elegir
 
-### 🧩 **Puzzles Desafiantes**
+### 🧩 Puzzles Desafiantes
 - Acertijos y puzzles de lógica
 - Desafíos con códigos numéricos
 - Misterios basados en palabras
 - Pistas ocultas a lo largo del juego
 
-### ⚔️ **Mecánicas de Supervivencia**
+### ⚔️ Mecánicas de Supervivencia
 - Sistema de salud dinámico
 - Gestión de objetos (vendas, herramientas)
 - Decisiones con consecuencias reales
-- Múltiples escenarios de muerte (¡ten cuidado!)
+- Múltiples escenarios de muerte — ¡ten cuidado!
 
-### 🎭 **Selección de Personaje**
-- **Renn** - Una joven determinada
-- **Akira** - Un joven valiente
-- **Asuna** - Una guerrera habilidosa
-- **Kirito** - Un pensador estratégico
+### 🎭 Selección de Personaje
+- **Renn** — Una joven determinada
+- **Akira** — Un joven valiente
+- **Asuna** — Una guerrera habilidosa
+- **Kirito** — Un pensador estratégico
 
-### 🎨 **Experiencia Atmosférica**
+### 🎨 Experiencia Atmosférica
 - Ilustraciones en arte ASCII
 - Texto con código de colores para mayor énfasis
 - Efectos de sonido (pitidos en momentos dramáticos)
@@ -51,10 +68,10 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ## 💻 Requisitos del Sistema
 
-### 🖥️ Sistema Operativo Compatible
+### 🖥️ Sistemas Operativos Compatibles
 
 | Plataforma | Versión Mínima | Versión Recomendada |
-|-----------|---------------|-------------------|
+|------------|---------------|---------------------|
 | **Windows** | Windows 7 | Windows 10 / 11 |
 | **Linux** | Kernel 3.x | Ubuntu 20.04+ / Debian 11+ |
 | **macOS** | macOS 10.12 Sierra | macOS 12 Monterey+ |
@@ -64,7 +81,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 ### ⚙️ Hardware
 
 | Componente | Requisito Mínimo |
-|-----------|-----------------|
+|------------|-----------------|
 | **RAM** | 25 MB |
 | **Almacenamiento** | 5 MB de espacio libre |
 | **Procesador** | Cualquier CPU de doble núcleo |
@@ -104,7 +121,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 ### Controles Básicos
 
 | Tecla | Acción |
-|-----|--------|
+|-------|--------|
 | **Teclas Numéricas (1-4)** | Seleccionar opciones del menú |
 | **Teclas Numéricas (0-9)** | Ingresar códigos numéricos |
 | **Letras (A-Z)** | Escribir respuestas a los acertijos |
@@ -119,7 +136,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 ✅ **Explora Todo:** Revisa todos los objetos en cada habitación  
 ✅ **Administra tu Salud:** Usa las vendas con sabiduría  
 ✅ **Guarda tus Respuestas:** Algunos puzzles tienen múltiples etapas  
-✅ **Piensa con Lógica:** La mayoría de los puzzles siguen patrones
+✅ **Piensa con Lógica:** La mayoría de los puzzles siguen patrones  
 
 ---
 
@@ -183,10 +200,10 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 **R:** Es posible que tu consola no soporte colores. El juego sigue siendo jugable, solo que sin colores.
 
 ### P: Cometí un error. ¿Puedo volver atrás?
-**R:** No, las decisiones son permanentes. ¡Eso es parte del desafío! Pero puedes reiniciar después de un game over.
+**R:** No, las decisiones son permanentes — ¡eso es parte del desafío! Pero puedes reiniciar después de un game over.
 
 ### P: ¿Cuánto tiempo toma completarlo?
-**R:** Aproximadamente 20-40 minutos en la primera partida.
+**R:** Aproximadamente 20–40 minutos en la primera partida.
 
 ### P: ¿Puedo guardar mi progreso?
 **R:** Actualmente no hay sistema de guardado. Debes completar el juego en una sola sesión.
@@ -207,6 +224,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 ---
 
 ## 📸 Capturas de Pantalla
+
 ```
 ================================================================================================
 |                                    ZHYNIRIA                                                  |
@@ -227,12 +245,12 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ¡Ten cuidado! El juego presenta múltiples formas de morir:
 
-1. **Asfixia por Cenizas** - No te protejas de las cenizas
-2. **Respuesta Incorrecta en Puzzle** - Demasiados intentos fallidos
-3. **Activación de Trampa** - Elegir los objetos equivocados
-4. **Muerte por Aplastamiento** - Activar mecanismos letales
-5. **Sobrecarga de Ansiedad** - Tardar demasiado en decidir
-6. **Y más...** - ¡Descúbrelos tú mismo!
+1. **Asfixia por Cenizas** — No te protejas de las cenizas
+2. **Respuesta Incorrecta en Puzzle** — Demasiados intentos fallidos
+3. **Activación de Trampa** — Elegir los objetos equivocados
+4. **Muerte por Aplastamiento** — Activar mecanismos letales
+5. **Sobrecarga de Ansiedad** — Tardar demasiado en decidir
+6. **Y más...** — ¡Descúbrelos tú mismo!
 
 ---
 
@@ -256,13 +274,13 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 
 ### Equipo de Desarrollo: ModeX
 
-- **Carlos Gabriel Magallanes López** - Desarrollador Principal
-- **Kevin Zaid Barron Pando** - Desarrollador
-- **Marco Andrés Bonilla Murillo** - Desarrollador
-- **Sergio Badiola Muñoz** - Diseñador de Juego
-- **Jose Abraham Adame Gallardo** - Diseñador de Juego
+- **Carlos Gabriel Magallanes López** — Desarrollador Principal
+- **Kevin Zaid Barron Pando** — Desarrollador
+- **Marco Andrés Bonilla Murillo** — Desarrollador
+- **Sergio Badiola Muñoz** — Diseñador de Juego
+- **Jose Abraham Adame Gallardo** — Diseñador de Juego
 
-**Período de Desarrollo:** 29 de Abril - 12 de Junio, 2025
+**Período de Desarrollo:** 29 de Abril – 12 de Junio, 2025
 
 ---
 
@@ -271,7 +289,7 @@ Ahora, oscuras pesadillas han corrompido la torre desde adentro, transformándol
 Este juego es gratuito para uso personal.  
 © 2025 Equipo de Desarrollo ModeX
 
-**Por favor no:**
+**Por favor NO:**
 - Redistribuyas versiones modificadas
 - Uses con fines comerciales
 - Elimines los créditos
@@ -298,4 +316,4 @@ Este juego es gratuito para uso personal.
 ---
 
 *Última Actualización: 16 de Diciembre, 2025*  
-*Versión: 1.0 - Edición Completa*
+*Versión: 1.0 — Edición Completa*
