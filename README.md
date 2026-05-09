@@ -18,7 +18,7 @@
 ## 🎬 Preview
 
 <div align="center">
-  <img src="assets/preview.gif" alt="Zhyniria Preview"/>
+  <img src="assets/gifs/preview.gif" alt="Zhyniria Preview"/>
 </div>
 
 ---
