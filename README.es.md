@@ -18,7 +18,7 @@
 ## 🎬 Vista Previa
 
 <div align="center">
-  <img src="assets/preview.gif" alt="Vista Previa de Zhyniria"/>
+  <img src="assets/gifs/preview.gif" alt="Vista Previa de Zhyniria"/>
 </div>
 
 ---
